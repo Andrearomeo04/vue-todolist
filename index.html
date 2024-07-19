@@ -20,7 +20,20 @@
                         <div class="todolist w-75">
                             <ul class="list-unstyled">
                                 <li v-for="item in todolist" class="py-4">
-                                    {{ item.text}}
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            {{ item.text}}
+                                        </div>
+                                        
+                                        <div class="buttons">
+                                            <button class="btn btn-success me-2">
+                                                <i class="fas fa-check"></i>
+                                            </button>
+                                            <button class="btn btn-danger">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
                             <div class="d-flex w-75 mx-auto pb-3 pt-4">

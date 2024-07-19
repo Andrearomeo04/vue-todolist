@@ -32,7 +32,8 @@ createApp({
                   text: 'Preparare la cena', 
                   done: false 
                 }
-              ]
+              ],
+              newtask: null
         }
     },
     methods: {
@@ -46,6 +47,9 @@ createApp({
                 done: false
             })
             this.newtask = ''
+        },
+        checktask (index) {
+            this.todolist[index].done = !this.todolist[index].done
         }
     }
 }).mount('#app')    

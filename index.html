@@ -21,15 +21,15 @@
                             <ul class="list-unstyled">
                                 <li v-for="item, index in todolist" class="py-4">
                                     <div class="d-flex justify-content-between">
-                                        <div>
+                                        <div :class="item.done ? 'text-decoration-line-through' : ''">
                                             {{ item.text}}
                                         </div>            
                                         <div class="buttons">
-                                            <button class="btn me-2" :class="todolist.done ? 'bg-transparent' : 'btn-success'">
-                                                <i class="fas fa-check" :class="todolist.done ? 'fa-x' : 'fa-check'"></i>
+                                            <button class="btn me-2" :class="item.done ? 'btn-dark' : 'btn-success'" @click="checktask(index)">
+                                                <i class="fas fa-check" :class="item.done ? 'fa-x' : 'fa-check'"></i>
                                             </button>
                                             <button class="btn btn-danger" @click="deletetask(index)">
-                                                <i class="fas fa-trash"></i>
+                                                <i class="fas fa-trash" @click="checktask"></i>
                                             </button>
                                         </div>
                                     </div>

@@ -4,10 +4,28 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 header {
     padding: 1rem;
     background-color: rgb(255, 190, 69);
     color: white;
     display: flex;
     justify-content: center;
+
 }
+
+.todolist {
+    background-color: orange;
+    margin: 0 auto;
+}
+
+ul li {
+    padding: 0 2rem;
+    margin: 0 2rem;
+    border-bottom: 1px solid white;
+    color: #F0F0F0;
+}
+

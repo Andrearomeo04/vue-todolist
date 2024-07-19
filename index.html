@@ -10,11 +10,26 @@
 </head>
 <body>
     <div id="app">
-        <header>
+        <header class="mb-5">
             <h1>VUE TODOLIST</h1>
         </header>
-        <main></main>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="todolist w-75">
+                            <ul class="list-unstyled">
+                                <li v-for="item in todolist" class="py-4">
+                                    {{ item.text}}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>

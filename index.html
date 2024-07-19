@@ -19,7 +19,7 @@
                     <div class="col-12">
                         <div class="todolist w-75">
                             <ul class="list-unstyled">
-                                <li v-for="item in todolist" class="py-4">
+                                <li v-for="item, index in todolist" class="py-4">
                                     <div class="d-flex justify-content-between">
                                         <div>
                                             {{ item.text}}
@@ -28,7 +28,7 @@
                                             <button class="btn me-2" :class="todolist.done ? 'bg-transparent' : 'btn-success'">
                                                 <i class="fas fa-check" :class="todolist.done ? 'fa-x' : 'fa-check'"></i>
                                             </button>
-                                            <button class="btn btn-danger" @click="deletetask">
+                                            <button class="btn btn-danger" @click="deletetask(index)">
                                                 <i class="fas fa-trash"></i>
                                             </button>
                                         </div>
@@ -36,8 +36,8 @@
                                 </li>
                             </ul>
                             <div class="d-flex w-75 mx-auto pb-3 pt-4">
-                                <input type="text" class="form-control" placeholder="Inserisci qui la tua nuova task">
-                                <button class="btn btn-success ms-4">Aggiungi</button>
+                                <input type="text" class="form-control" placeholder="Inserisci qui la tua nuova task" v-model="newtask">
+                                <button class="btn btn-success ms-4" @click="addtask()">Aggiungi</button>
                             </div>
                         </div>
                     </div>

@@ -28,7 +28,7 @@
                                             <button class="btn me-2" :class="todolist.done ? 'bg-transparent' : 'btn-success'">
                                                 <i class="fas fa-check" :class="todolist.done ? 'fa-x' : 'fa-check'"></i>
                                             </button>
-                                            <button class="btn btn-danger">
+                                            <button class="btn btn-danger" @click="deletetask">
                                                 <i class="fas fa-trash"></i>
                                             </button>
                                         </div>

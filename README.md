@@ -15,7 +15,7 @@ soluzione
 2.una volta creato il markup, creo l'istanza vue in js
 3.creo un array di oggetti in cui inseriro 2 proprieta per ogni oggetto, text e done
 4.inserisco dinamicamente il testo di ogni todo dentro il dom
-5.assegno una classe tramite binding al bottone del check, al bottone delete task e alle icone dei due bottoni e utilizzo un operatore ternario
+5.assegno una classe tramite binding al bottone del check e all'icona check e utilizzo un operatore ternario
 6.per il bottone check: se done è uguale a true allora gli assegno la classe dello sfondo black trasparente, altrimenti gli assegno la classe dello sfondo verde
 7.per l'icona check: se done è uguale a true allora gli assegno la classe dell'icona a forma di x, altrimenti gli assegno la classe dell'icona a forma di check
 8.su methods creo una funzione che mi servira per cancellare la task
@@ -25,6 +25,3 @@ soluzione
 12.assegno l'attributo v-model per recuperare il valore dell'input
 13.dentro la funzione creo un oggetto che conterra la proprieta text che a sua volta conterrà il valore dell'input, e la proprietà done che conterrà il valore false
 14.pusho l'oggetto nell'array
-
-
-

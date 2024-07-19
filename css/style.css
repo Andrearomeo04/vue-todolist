@@ -6,19 +6,20 @@
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #F0F0F0;
 }
 
 header {
     padding: 1rem;
-    background-color: rgb(255, 190, 69);
-    color: white;
+    background-color: #E6E6FA;
+    color: #333333;
     display: flex;
     justify-content: center;
 
 }
 
 .todolist {
-    background-color: orange;
+    background-color: #E6E6FA;
     margin: 0 auto;
 }
 
@@ -26,7 +27,7 @@ ul li {
     padding: 0 2rem;
     margin: 0 2rem;
     border-bottom: 1px solid white;
-    color: #F0F0F0;
+    color: #333333;
 }
 
 ul li:last-child{

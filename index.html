@@ -23,11 +23,10 @@
                                     <div class="d-flex justify-content-between">
                                         <div>
                                             {{ item.text}}
-                                        </div>
-                                        
+                                        </div>            
                                         <div class="buttons">
-                                            <button class="btn btn-success me-2">
-                                                <i class="fas fa-check"></i>
+                                            <button class="btn me-2" :class="todolist.done ? 'bg-transparent' : 'btn-success'">
+                                                <i class="fas fa-check" :class="todolist.done ? 'fa-x' : 'fa-check'"></i>
                                             </button>
                                             <button class="btn btn-danger">
                                                 <i class="fas fa-trash"></i>
